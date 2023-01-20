@@ -18,15 +18,10 @@ Produced artifacts:
 
 ## How To Run a GraalVM Native Image
 
-Unfortunately, running the image throws the following exception:
+With `resource-config.json`, running the image works as follows:
 
 ```
-% /Users/izeye/IdeaProjects/hello-browscap-java/build/native/nativeCompile/hello-browscap-java
-Exception in thread "main" java.lang.NullPointerException: in is null
-        at java.base@17.0.5/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:103)
-        at java.base@17.0.5/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:82)
-        at com.blueconic.browscap.UserAgentService.createParserWithFields(UserAgentService.java:77)
-        at com.blueconic.browscap.UserAgentService.loadParser(UserAgentService.java:61)
-        at com.izeye.helloworld.Main.main(Main.java:17)
-%
+% /Users/izeye/IdeaProjects/hello-browscap-java/build/native/nativeCompile/hello-browscap-java 
+CapabilitiesImpl [myValues={BROWSER=Chrome, BROWSER_TYPE=Browser, BROWSER_MAJOR_VERSION=108, PLATFORM=macOS, PLATFORM_VERSION=10.15, DEVICE_TYPE=Desktop}]
+% 
 ```

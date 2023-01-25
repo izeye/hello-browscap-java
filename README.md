@@ -30,3 +30,11 @@ Exception in thread "main" java.lang.NullPointerException: in is null
         at com.izeye.helloworld.Main.main(Main.java:17)
 %
 ```
+
+Since 1.4.0, it works as follows:
+
+```
+% /Users/izeye/IdeaProjects/hello-browscap-java/build/native/nativeCompile/hello-browscap-java
+CapabilitiesImpl [myValues={BROWSER=Chrome, BROWSER_TYPE=Browser, BROWSER_MAJOR_VERSION=108, PLATFORM=macOS, PLATFORM_VERSION=10.15, DEVICE_TYPE=Desktop}]
+%
+```
